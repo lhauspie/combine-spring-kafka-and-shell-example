@@ -1,0 +1,32 @@
+{
+	"name": "MessageValue",
+	"type": "record",
+	"namespace": "com.lhauspie.example.kafka.message",
+	"fields": [
+		{
+			"name": "orgId",
+			"type": ["null", "string"]
+		},
+		{
+			"name": "objectId",
+			"type": ["null", "string"]
+		},
+		{
+			"name": "code",
+			"type": ["null", "string"]
+		},
+		{
+			"name": "label",
+			"type": ["null", "string"]
+		},
+		{
+			"name": "value",
+			"type": ["null", "int"]
+		},
+		{
+			"name": "dateTime",
+			"type": ["null", {"type": "long", "logicalType": "timestamp-millis"}],
+			"default": null
+		}
+	]
+}

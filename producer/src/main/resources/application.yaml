@@ -1,0 +1,18 @@
+#APP SPECIFIC CUSTOM PROPERTIES
+app:
+  kafka:
+    producer:
+      topic: my_topic
+
+#SPRING PROPERTIES
+spring:
+  kafka:
+    bootstrap-servers: "localhost:9092"
+    properties:
+      #Server host name verification is disabled by setting ssl.endpoint.identification.algorithm to an empty string
+      ssl.endpoint.identification.algorithm:
+    producer:
+      retries: 0
+      acks: all
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer

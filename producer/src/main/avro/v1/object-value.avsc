@@ -1,0 +1,16 @@
+{
+	"name": "ObjectValue",
+	"type": "record",
+	"namespace": "com.lhauspie.example.kafka.object",
+	"fields": [
+		{
+			"name": "id",
+			"type": ["null", "string"]
+		},
+		{
+			"name": "value",
+			"type": ["null", "int"],
+			"default": null
+		}
+	]
+}

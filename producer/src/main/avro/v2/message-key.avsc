@@ -1,0 +1,15 @@
+{
+  "name": "MessageKey",
+  "type": "record",
+  "namespace": "com.lhauspie.example.kafka.message",
+  "fields": [
+    {
+      "name": "orgId",
+      "type": ["null", "string"]
+    },
+    {
+      "name": "objectId",
+      "type": ["null", "string"]
+    }
+  ]
+}
